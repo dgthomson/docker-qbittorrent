@@ -4,6 +4,7 @@ ARG LIBTORRENT_VERSION=1.2.12
 ARG QBITTORRENT_VERSION=4.3.4.1
 
 # Install required packages
+RUN echo 'nameserver 8.8.8.8' >> /etc/resolv.conf
 RUN apk add --no-cache \
         tzdata \
         su-exec \
