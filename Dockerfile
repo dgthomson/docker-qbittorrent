@@ -1,7 +1,10 @@
+# alpine:3.13 has DNS issues on Raspberry Pi
 FROM alpine:3.12
 
-ARG LIBTORRENT_VERSION=1.2.12
-ARG QBITTORRENT_VERSION=4.3.4.1
+# 2.0.3 was 1.2.12
+ARG LIBTORRENT_VERSION=2.0.3
+# 4.3.5 was 4.3.4.1
+ARG QBITTORRENT_VERSION=4.3.5
 
 # Install required packages
 RUN apk add --no-cache \
