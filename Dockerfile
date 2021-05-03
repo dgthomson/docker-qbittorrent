@@ -4,7 +4,6 @@ ARG LIBTORRENT_VERSION=1.2.12
 ARG QBITTORRENT_VERSION=4.3.4.1
 
 # Install required packages
-RUN echo -e "http://uk.alpinelinux.org/alpine/v3.13/main\nhttp://uk.alpinelinux.org/alpine/v3.13/community" > /etc/apk/repositories
 RUN apk add --no-cache \
         tzdata \
         su-exec \
